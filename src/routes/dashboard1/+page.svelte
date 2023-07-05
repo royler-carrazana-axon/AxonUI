@@ -1,18 +1,17 @@
 <script>
 	import { fade } from 'svelte/transition';
-  import Button2 from "../../components/ui/buttons/Button2.svelte";
+  import Button2 from "../../components/ui/buttons/IconButton.svelte";
   import Card1Image from "../../components/ui/cards/Card1Image.svelte";
   import Card1People from "../../components/ui/cards/Card1People.svelte";
   import Card1Stat from "../../components/ui/cards/Card1Stat.svelte";
   import Card1Text from "../../components/ui/cards/Card1Text.svelte";
   import Card2Image from "../../components/ui/cards/Card2Image.svelte";
-	import Button from '../../stories/Button.svelte';
+ 
 </script>
 
-<div  class="px-10 mt-14">
+<div  class="px-10 mt-14 absolute inset-0 bg-black z-50 m-0 -mt-10 pt-20">
 
-  <Button label="Button" size="small" />
-
+  
   <div class="grid grid-cols-9 gap-16">
     <div class="col-span-3 flex flex-col space-y-7">
       <Card1Text />

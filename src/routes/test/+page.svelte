@@ -2,8 +2,8 @@
   import { onMount } from "svelte";
   import * as Page from "axonui";
   // Importa los componentes de botón
-  import Button1 from "./../../components/ui/buttons/Button1.svelte";
-  import Button2 from "./../../components/ui/buttons/Button2.svelte";
+  import Button1 from "../../components/ui/buttons/Button.svelte";
+  import Button2 from "../../components/ui/buttons/IconButton.svelte";
   import type { SvelteComponent } from "svelte";
 
   let buttons: (typeof Button1 | typeof Button2)[] = []; // Almacena los componentes de botón

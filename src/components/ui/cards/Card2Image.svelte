@@ -1,6 +1,6 @@
 <script lang="ts">
   import { fade, fly } from "svelte/transition";
-  import Button1 from "../buttons/Button1.svelte";
+  import Button1 from "../buttons/Button.svelte";
   import ButtonLink1 from "../buttons/ButtonLink1.svelte";
 
   export let imageSrc: String = "/b2.jpg";
