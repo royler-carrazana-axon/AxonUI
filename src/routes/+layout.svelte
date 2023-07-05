@@ -1,4 +1,5 @@
 <script>
+	import { SvelteToast } from "@zerodevx/svelte-toast";
 	import "../styles.css";
 
 	const components = [
@@ -41,6 +42,8 @@
 			path: "/dashboard3",
 		},
 	];
+
+	const options = {};
 </script>
 
 <div>
@@ -76,7 +79,7 @@
 			class="flex-0 min-h-screen from-gray-50 via-slate-100 to-slate-100 bg-gradient-to-bl shadow-slate-100 p-2 w-1/4 shadow-lg rounded-xl p-4"
 		>
 			<div>
-				<h2 class="subtitle"> Atoms</h2>
+				<h2 class="subtitle">Atoms</h2>
 				<hr class="py-3 my-1" />
 				<div class="space-y-1 flex flex-col">
 					{#each components as component}
@@ -176,4 +179,5 @@
 			<slot />
 		</div>
 	</main>
+	<SvelteToast {options} />
 </div>
