@@ -13,7 +13,7 @@
 
 	export let name: string = "Button";
 	export let componentPreview: any = null;
-	export let patch: string = null;
+	export let patch: string = "";
 	export let properties: PropertyType = {
 		color: "string",
 		title: "string",
