@@ -5,6 +5,7 @@
 	//Props
 	export let color = "bg-black" ;
 	export let title = "Button";
+	
 </script>
 
 <button

@@ -11,9 +11,13 @@
 		iconPosition?: string;
 	};
 
+	export let keyFolder: string = "buttons";
+	export let cols: number = 2;
+	export let keyName: string = "Button";
 	export let name: string = "Button";
 	export let componentPreview: any = null;
 	export let patch: string = "";
+	export let icon: any = null;
 	export let properties: PropertyType = {
 		color: "string",
 		title: "string",
@@ -21,8 +25,8 @@
 		iconPosition: "string",
 	};
 
-	async function copyCode(carpeta: string, archivo: string) {
-		const contenidoHTML = await cargarContenidoHTML(carpeta, archivo);
+	async function copyCode() {
+		const contenidoHTML = await cargarContenidoHTML(keyFolder, keyName);
 		if (contenidoHTML) {
 			navigator.clipboard
 				.writeText(contenidoHTML)
@@ -56,11 +60,9 @@
 		<div class="w-full bg-slate-100 p-2 rounded-md flex justify-between">
 			<h3 class="subtitle">{name}</h3>
 			<div class="flex space-x-2 items-center">
-				<span class="text-sm text-gray-400 pr-3"
-					>{patch}</span
-				>
+				<span class="text-sm text-gray-400 pr-3">{patch}</span>
 				<button
-					on:click={() => copyCode("buttons", "Button")}
+					on:click={() => copyCode()}
 					class="bg-gray-200 text-gray-800 rounded-lg p-1"
 				>
 					<svg
@@ -80,9 +82,9 @@
 				</button>
 			</div>
 		</div>
-		<div class="grid grid-cols-2 bg-gray-50">
+		<div class={`grid grid-cols-${cols} bg-gray-50`}>
 			<div class="p-7">
-				<svelte:component this={componentPreview}  />
+				<svelte:component this={componentPreview} {icon} />
 			</div>
 
 			<div class="justify-start p-2 flex flex-col">
@@ -102,5 +104,3 @@
 		</div>
 	</div>
 </div>
-
-

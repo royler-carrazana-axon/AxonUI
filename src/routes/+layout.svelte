@@ -13,7 +13,7 @@
 		},
 		{
 			name: "Stats",
-			path: "/dividers",
+			path: "/stats",
 		},
 	];
 

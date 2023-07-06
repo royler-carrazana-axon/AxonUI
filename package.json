@@ -31,6 +31,7 @@
     "@types/chart.js": "^2.9.37",
     "chart.js": "^4.3.0",
     "d3": "^7.8.5",
-    "layercake": "^7.6.0"
+    "layercake": "^7.6.0",
+    "svelte-icons": "^2.1.0"
   }
 }
