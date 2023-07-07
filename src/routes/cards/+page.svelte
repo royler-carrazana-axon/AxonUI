@@ -1,43 +1,40 @@
 <script lang="ts">
 	import HeaderPage from "../../components/root/HeaderPage.svelte";
 	import Component from "../../components/root/Component.svelte";
-	import StatSimple from "../../components/ui/stats/StatSimple.svelte";
-	import StatsCustom from "../../components/ui/stats/StatsCustom.svelte";
+	import Card1Image from "../../components/ui/cards/CardImage.svelte";
+	import CardImage from "../../components/ui/cards/CardImage.svelte";
+	import CardSimple from "../../components/ui/cards/CardSimple.svelte";
 
 	const components = [
 		{
-			name: "Stats Simple",
-			cols: 1,
+			name: "Card Simple",
+			cols: 2,
 			keyName: "StatSimple",
 			keyFolder: "stats",
-			componentPreview: StatSimple,
+			componentPreview: CardSimple,
 			patch: "/ui/dividers/Divider.svelte",
 			properties: {
-				period: "string",
-				modelValue: "number",
-				modelName: "string",
+				imageSrc: "string",
+                link: "string",
 			},
 		},
 		{
-			active: false,
-			name: "Stats Simple",
+			name: "Card Simple with Image",
 			cols: 1,
-			px: 32,
 			keyName: "StatSimple",
 			keyFolder: "stats",
-			componentPreview: StatsCustom,
+			componentPreview: CardImage,
 			patch: "/ui/dividers/Divider.svelte",
 			properties: {
-				period: "string",
-				modelValue: "number",
-				modelName: "string",
+				imageSrc: "string",
+				link: "string",
 			},
 		},
 	];
 </script>
 
 <div>
-	<HeaderPage title="Stats" />
+	<HeaderPage title="Cards" />
 
 	{#each components as component}
 		<Component {...component} />

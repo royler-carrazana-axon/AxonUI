@@ -20,6 +20,10 @@
 			name: "Stats",
 			path: "/stats",
 		},
+		{
+			name: "Cards",
+			path: "/cards",
+		},
 	];
 
 	const oganisms = [
@@ -120,7 +124,7 @@
 			{/if}
 		</div>
 	</div>
-	<div class="flex justify-between px-20">
+	<div class="flex justify-between mx-auto max-w-5xl">
 		<a href="https://github.com/royler-carrazana-axon/AxonUI">
 			<div class="py-4 flex space-x-3 px-16 max-w-5xl mx-auto">
 				<svg

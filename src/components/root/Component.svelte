@@ -81,9 +81,9 @@
 				</button>
 			</div>
 		</div>
-		<div class={`grid grid-cols-${cols} bg-gray-50 px-${px}`}>
-			<div class="p-7">
-				<svelte:component this={componentPreview}   {icon} />
+		<div class={`grid grid-cols-${cols} bg-gray-50 p-3`}>
+			<div class={`py-2 px-${px}`}>
+				<svelte:component this={componentPreview} {icon} />
 			</div>
 
 			<div class="justify-start p-2 flex flex-col">
