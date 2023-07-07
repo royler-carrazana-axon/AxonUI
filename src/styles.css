@@ -2,13 +2,33 @@
 @tailwind components;
 @tailwind utilities;
 
-.btn-primary {
-  @apply bg-blue-500 text-white font-bold py-2 px-4 rounded;
+.text-primary {
+	@apply text-sky-100 dark:text-sky-50;
+}
+.text-primary-in-clean {
+	@apply text-sky-500 dark:text-sky-50;
 }
 
-.title {
-  @apply text-lg font-medium text-gray-600 px-3 py-1 ;
+.bg-primary {
+	@apply bg-sky-500  dark:bg-sky-900  hover:bg-sky-800;
 }
-.subtitle {
-  @apply text-gray-600 text-base ;
+
+.hover-primary {
+	@apply hover:bg-sky-100 dark:hover:bg-sky-800;
+}
+
+.bg-primary-clean {
+	@apply bg-sky-100  dark:bg-sky-900  hover:bg-sky-200;
+}
+
+.bg-primary-dark {
+	@apply bg-sky-600  dark:bg-sky-800  hover:bg-sky-900;
+}
+
+.btn-primary {
+	@apply rounded-3xl px-7 h-10;
+}
+
+.btn-primary:hover svg {
+	@apply hover:scale-105 hover:rotate-90;
 }

@@ -1,4 +1,4 @@
-<script lang="ts">
+<script >
 	 
 	import HeaderPage from "../../components/root/HeaderPage.svelte";
 	import Component from "../../components/root/Component.svelte";
@@ -13,7 +13,6 @@
 			componentPreview: Button,
 			patch: "/ui/buttons/Button.svelte",
 			properties: {
-				color: "string",
 				title: "string",
 			}
 		},
@@ -25,9 +24,9 @@
 			componentPreview: IconButton,
 			patch: "/ui/buttons/IconButton.svelte",
 			properties: {
-				color: "string",
 				title: "string",
 				icon: "SvelteIcon",
+				iconPosition: "string ",
 			}
 		},
 	];

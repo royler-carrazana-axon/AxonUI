@@ -6,5 +6,5 @@
 	<nav class="px-3 mt-1">
 		<h2 class="title">{title}</h2>
 	</nav>
-     <hr>
+	<hr />
 </div>

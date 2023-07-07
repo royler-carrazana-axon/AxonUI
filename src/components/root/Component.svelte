@@ -1,25 +1,24 @@
 <script lang="ts">
-	import Button from "../../components/ui/buttons/Button.svelte";
-	import Header1 from "../../components/ui/headers/Header1.svelte";
-	import IconButton from "./../../components/ui/buttons/IconButton.svelte";
 	import { toast } from "@zerodevx/svelte-toast";
 
 	type PropertyType = {
-		color?: string;
 		title?: string;
 		icon?: string;
 		iconPosition?: string;
+		period?: string;
+		modelValue?: string;
+		modelName?: string;
 	};
 
 	export let keyFolder: string = "buttons";
 	export let cols: number = 2;
+	export let px: number = 2;
 	export let keyName: string = "Button";
 	export let name: string = "Button";
 	export let componentPreview: any = null;
 	export let patch: string = "";
 	export let icon: any = null;
 	export let properties: PropertyType = {
-		color: "string",
 		title: "string",
 		icon: "string",
 		iconPosition: "string",
@@ -82,9 +81,9 @@
 				</button>
 			</div>
 		</div>
-		<div class={`grid grid-cols-${cols} bg-gray-50`}>
+		<div class={`grid grid-cols-${cols} bg-gray-50 px-${px}`}>
 			<div class="p-7">
-				<svelte:component this={componentPreview} {icon} />
+				<svelte:component this={componentPreview}   {icon} />
 			</div>
 
 			<div class="justify-start p-2 flex flex-col">
